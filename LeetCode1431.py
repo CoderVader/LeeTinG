@@ -8,5 +8,8 @@ def kidsWithCandies(candies, extraCandies):
             l.append("false")
     return l
 
-k = kidsWithCandies([2,3,5,2,1],3)
-print(k)
+# TestCases
+
+assert kidsWithCandies([2,3,5,2,1],3) == ['true', 'true', 'true', 'true', 'false']
+assert kidsWithCandies([10,13,9,7,11],3) == ['true', 'true', 'false', 'false', 'true']
+assert kidsWithCandies([7,3,4],2) == ['true', 'false', 'false']
